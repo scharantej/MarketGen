@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>View Marketing Campaigns</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<h1>View Marketing Campaigns</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/create-campaign">Create Campaign</a>
+<a href="/view-campaigns">View Campaigns</a>
+</nav>
+</header>
+
+<main>
+<section>
+<h2>All Marketing Campaigns</h2>
+<table>
+<thead>
+<tr>
+<th>Campaign Name</th>
+<th>Status</th>
+<th>Start Date</th>
+<th>End Date</th>
+</tr>
+</thead>
+<tbody>
+<% for (const campaign of campaigns) { %>
+<tr>
+<td><%= campaign.name %></td>
+<td><%= campaign.status %></td>
+<td><%= campaign.start_date %></td>
+<td><%= campaign.end_date %></td>
+</tr>
+<% } %>
+</tbody>
+</table>
+</section>
+</main>
+
+<footer>
+<p>Copyright &copy; 2023 Marketing Campaign Tutorial</p>
+</footer>
+</body>
+
+</html>
+
+
