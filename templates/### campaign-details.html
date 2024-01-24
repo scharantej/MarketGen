@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Campaign Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<h1>Campaign Details</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/create-campaign">Create Campaign</a>
+<a href="/view-campaigns">View Campaigns</a>
+</nav>
+</header>
+
+<main>
+<section>
+<h2><%= campaign.name %></h2>
+<p><strong>Target Audience:</strong> <%= campaign.target_audience %></p>
+<p><strong>Budget:</strong> <%= campaign.budget %></p>
+<p><strong>Timeline:</strong> <%= campaign.timeline %></p>
+<p><strong>Status:</strong> <%= campaign.status %></p>
+</section>
+</main>
+
+<footer>
+<p>Copyright &copy; 2023 Marketing Campaign Tutorial</p>
+</footer>
+</body>
+
+</html>
+
+
